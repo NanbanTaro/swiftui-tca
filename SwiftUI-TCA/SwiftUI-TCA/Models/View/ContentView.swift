@@ -10,16 +10,23 @@ import SwiftUI
 import ComposableArchitecture
 
 struct ContentView: View {
-    let store: StoreOf<Counter> = Store(initialState: Counter.State(),
+    let counterStore: StoreOf<Counter> = Store(initialState: Counter.State(),
                                         reducer: Counter())
+    let twoCounterStore: StoreOf<TwoCounters> = Store(initialState: TwoCounters.State(),
+                                                      reducer: TwoCounters())
 
     var body: some View {
         Form {
-          Section {
-            CounterView(store: self.store)
-              .frame(maxWidth: .infinity)
-          }
+            Section {
+                CounterView(store: self.counterStore)
+                    .frame(maxWidth: .infinity)
+            }
+            Section {
+                TwoCountersView(store: self.twoCounterStore)
+                    .frame(maxWidth: .infinity)
+            }
         }
+        .buttonStyle(.borderless)
     }
 }
 
