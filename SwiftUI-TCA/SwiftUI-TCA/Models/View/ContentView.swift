@@ -7,16 +7,19 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct ContentView: View {
+    let store: StoreOf<Counter> = Store(initialState: Counter.State(),
+                                        reducer: Counter())
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Form {
+          Section {
+            CounterView(store: self.store)
+              .frame(maxWidth: .infinity)
+          }
         }
-        .padding()
     }
 }
 
