@@ -21,6 +21,8 @@
 		90E87BA82A0212A200E9DA9E /* TwoCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BA72A0212A200E9DA9E /* TwoCounterView.swift */; };
 		90E87BB02A022F6D00E9DA9E /* BindingFormStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BAF2A022F6D00E9DA9E /* BindingFormStore.swift */; };
 		90E87BB22A022F7600E9DA9E /* BindingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BB12A022F7600E9DA9E /* BindingFormView.swift */; };
+		90E87BB72A024E6100E9DA9E /* OptionalBasicsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BB62A024E6100E9DA9E /* OptionalBasicsStore.swift */; };
+		90E87BB92A024E6900E9DA9E /* OptionalBasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BB82A024E6900E9DA9E /* OptionalBasicsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		90E87BA72A0212A200E9DA9E /* TwoCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoCounterView.swift; sourceTree = "<group>"; };
 		90E87BAF2A022F6D00E9DA9E /* BindingFormStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingFormStore.swift; sourceTree = "<group>"; };
 		90E87BB12A022F7600E9DA9E /* BindingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingFormView.swift; sourceTree = "<group>"; };
+		90E87BB62A024E6100E9DA9E /* OptionalBasicsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalBasicsStore.swift; sourceTree = "<group>"; };
+		90E87BB82A024E6900E9DA9E /* OptionalBasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalBasicsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 				90E87B932A01FAC000E9DA9E /* Counter */,
 				90E87BA22A02051A00E9DA9E /* TwoCounter */,
 				90E87BA92A022E8C00E9DA9E /* Binding */,
+				90E87BB32A024E4400E9DA9E /* OptionalBasics */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -263,6 +268,31 @@
 			isa = PBXGroup;
 			children = (
 				90E87BB12A022F7600E9DA9E /* BindingFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90E87BB32A024E4400E9DA9E /* OptionalBasics */ = {
+			isa = PBXGroup;
+			children = (
+				90E87BB42A024E4B00E9DA9E /* Stores */,
+				90E87BB52A024E5300E9DA9E /* Views */,
+			);
+			path = OptionalBasics;
+			sourceTree = "<group>";
+		};
+		90E87BB42A024E4B00E9DA9E /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				90E87BB62A024E6100E9DA9E /* OptionalBasicsStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		90E87BB52A024E5300E9DA9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90E87BB82A024E6900E9DA9E /* OptionalBasicsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -405,12 +435,14 @@
 			files = (
 				907AA2C32A00FDC200D6CF8A /* ContentView.swift in Sources */,
 				90E87B9F2A01FD6400E9DA9E /* CounterStore.swift in Sources */,
+				90E87BB72A024E6100E9DA9E /* OptionalBasicsStore.swift in Sources */,
 				90E87BB02A022F6D00E9DA9E /* BindingFormStore.swift in Sources */,
 				90E87BA82A0212A200E9DA9E /* TwoCounterView.swift in Sources */,
 				90E87BA62A0211FD00E9DA9E /* TwoCounterStore.swift in Sources */,
 				907AA2C12A00FDC200D6CF8A /* SwiftUI_TCAApp.swift in Sources */,
 				90E87BB22A022F7600E9DA9E /* BindingFormView.swift in Sources */,
 				90E87BA12A01FDA100E9DA9E /* CounterView.swift in Sources */,
+				90E87BB92A024E6900E9DA9E /* OptionalBasicsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

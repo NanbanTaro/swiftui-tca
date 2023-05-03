@@ -11,11 +11,13 @@ import ComposableArchitecture
 
 struct ContentView: View {
     let counterStore: StoreOf<Counter> = Store(initialState: Counter.State(),
-                                        reducer: Counter())
+                                               reducer: Counter())
     let twoCounterStore: StoreOf<TwoCounters> = Store(initialState: TwoCounters.State(),
                                                       reducer: TwoCounters())
     let bindingFormStore: StoreOf<BindingForm> = Store(initialState: BindingForm.State(),
                                                        reducer: BindingForm())
+    let optionalBasicsStore: StoreOf<OptionalBasics> = Store(initialState: OptionalBasics.State(),
+                                                             reducer: OptionalBasics())
 
     var body: some View {
         Form {
@@ -29,6 +31,9 @@ struct ContentView: View {
             }
             Section {
                 BindingFormView(store: self.bindingFormStore)
+            }
+            Section {
+                OptionalBasicsView(store: self.optionalBasicsStore)
             }
         }
         .buttonStyle(.borderless)
