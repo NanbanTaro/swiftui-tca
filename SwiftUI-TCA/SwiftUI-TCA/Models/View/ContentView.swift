@@ -14,6 +14,8 @@ struct ContentView: View {
                                         reducer: Counter())
     let twoCounterStore: StoreOf<TwoCounters> = Store(initialState: TwoCounters.State(),
                                                       reducer: TwoCounters())
+    let bindingFormStore: StoreOf<BindingForm> = Store(initialState: BindingForm.State(),
+                                                       reducer: BindingForm())
 
     var body: some View {
         Form {
@@ -24,6 +26,9 @@ struct ContentView: View {
             Section {
                 TwoCountersView(store: self.twoCounterStore)
                     .frame(maxWidth: .infinity)
+            }
+            Section {
+                BindingFormView(store: self.bindingFormStore)
             }
         }
         .buttonStyle(.borderless)
