@@ -110,7 +110,6 @@
 			children = (
 				90E87B922A01FAA900E9DA9E /* App */,
 				90E87B8E2A01FA2A00E9DA9E /* Features */,
-				90E87BA92A022E8C00E9DA9E /* Binding */,
 				90E87B8F2A01FA3700E9DA9E /* Global */,
 				90E87B8D2A01FA0F00E9DA9E /* Models */,
 				90E87B902A01FA5000E9DA9E /* Services */,
@@ -158,6 +157,7 @@
 			children = (
 				90E87B932A01FAC000E9DA9E /* Counter */,
 				90E87BA22A02051A00E9DA9E /* TwoCounter */,
+				90E87BA92A022E8C00E9DA9E /* Binding */,
 			);
 			path = Features;
 			sourceTree = "<group>";
