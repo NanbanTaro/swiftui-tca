@@ -27,6 +27,8 @@
 		90E87BC02A03432600E9DA9E /* SharedStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BBF2A03432600E9DA9E /* SharedStateView.swift */; };
 		90E87BC22A03450A00E9DA9E /* SharedStateCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BC12A03450A00E9DA9E /* SharedStateCounterView.swift */; };
 		90E87BC42A03452500E9DA9E /* SharedStateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BC32A03452500E9DA9E /* SharedStateProfileView.swift */; };
+		90E87BC92A03604A00E9DA9E /* AlertAndConfirmationDialogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BC82A03604A00E9DA9E /* AlertAndConfirmationDialogStore.swift */; };
+		90E87BCB2A03606F00E9DA9E /* AlertAndConfirmationDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BCA2A03606F00E9DA9E /* AlertAndConfirmationDialogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		90E87BBF2A03432600E9DA9E /* SharedStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStateView.swift; sourceTree = "<group>"; };
 		90E87BC12A03450A00E9DA9E /* SharedStateCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStateCounterView.swift; sourceTree = "<group>"; };
 		90E87BC32A03452500E9DA9E /* SharedStateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStateProfileView.swift; sourceTree = "<group>"; };
+		90E87BC82A03604A00E9DA9E /* AlertAndConfirmationDialogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAndConfirmationDialogStore.swift; sourceTree = "<group>"; };
+		90E87BCA2A03606F00E9DA9E /* AlertAndConfirmationDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAndConfirmationDialogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 		90E87B8E2A01FA2A00E9DA9E /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				90E87BC52A03600500E9DA9E /* AlertAndConfirmationDialog */,
 				90E87B932A01FAC000E9DA9E /* Counter */,
 				90E87BA22A02051A00E9DA9E /* TwoCounter */,
 				90E87BA92A022E8C00E9DA9E /* Binding */,
@@ -333,6 +338,31 @@
 			path = Stores;
 			sourceTree = "<group>";
 		};
+		90E87BC52A03600500E9DA9E /* AlertAndConfirmationDialog */ = {
+			isa = PBXGroup;
+			children = (
+				90E87BC72A03602A00E9DA9E /* Stores */,
+				90E87BC62A03602100E9DA9E /* Views */,
+			);
+			path = AlertAndConfirmationDialog;
+			sourceTree = "<group>";
+		};
+		90E87BC62A03602100E9DA9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90E87BCA2A03606F00E9DA9E /* AlertAndConfirmationDialogView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90E87BC72A03602A00E9DA9E /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				90E87BC82A03604A00E9DA9E /* AlertAndConfirmationDialogStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -482,6 +512,8 @@
 				90E87BA12A01FDA100E9DA9E /* CounterView.swift in Sources */,
 				90E87BC22A03450A00E9DA9E /* SharedStateCounterView.swift in Sources */,
 				90E87BBE2A03369700E9DA9E /* SharedStateStore.swift in Sources */,
+				90E87BC92A03604A00E9DA9E /* AlertAndConfirmationDialogStore.swift in Sources */,
+				90E87BCB2A03606F00E9DA9E /* AlertAndConfirmationDialogView.swift in Sources */,
 				90E87BB92A024E6900E9DA9E /* OptionalBasicsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

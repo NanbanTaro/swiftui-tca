@@ -20,6 +20,8 @@ struct ContentView: View {
                                                              reducer: OptionalBasics())
     let sharedStateStore = Store(initialState: SharedState.State(),
                                  reducer: SharedState())
+    let alertAndConfirmationDialog = Store(initialState: AlertAndConfirmationDialog.State(),
+                                           reducer: AlertAndConfirmationDialog())
 
     var body: some View {
 //        Form {
@@ -39,7 +41,12 @@ struct ContentView: View {
 //            }
 //        }
 //        .buttonStyle(.borderless)
-        SharedStateView(store: self.sharedStateStore)
+
+//        SharedStateView(store: self.sharedStateStore)
+
+        Form {
+            AlertAndConfirmationDialogView(store: self.alertAndConfirmationDialog)
+        }
     }
 }
 
