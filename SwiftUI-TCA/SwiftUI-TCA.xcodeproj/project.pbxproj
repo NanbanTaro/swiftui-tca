@@ -23,6 +23,10 @@
 		90E87BB22A022F7600E9DA9E /* BindingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BB12A022F7600E9DA9E /* BindingFormView.swift */; };
 		90E87BB72A024E6100E9DA9E /* OptionalBasicsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BB62A024E6100E9DA9E /* OptionalBasicsStore.swift */; };
 		90E87BB92A024E6900E9DA9E /* OptionalBasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BB82A024E6900E9DA9E /* OptionalBasicsView.swift */; };
+		90E87BBE2A03369700E9DA9E /* SharedStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BBD2A03369700E9DA9E /* SharedStateStore.swift */; };
+		90E87BC02A03432600E9DA9E /* SharedStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BBF2A03432600E9DA9E /* SharedStateView.swift */; };
+		90E87BC22A03450A00E9DA9E /* SharedStateCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BC12A03450A00E9DA9E /* SharedStateCounterView.swift */; };
+		90E87BC42A03452500E9DA9E /* SharedStateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87BC32A03452500E9DA9E /* SharedStateProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		90E87BB12A022F7600E9DA9E /* BindingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingFormView.swift; sourceTree = "<group>"; };
 		90E87BB62A024E6100E9DA9E /* OptionalBasicsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalBasicsStore.swift; sourceTree = "<group>"; };
 		90E87BB82A024E6900E9DA9E /* OptionalBasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalBasicsView.swift; sourceTree = "<group>"; };
+		90E87BBD2A03369700E9DA9E /* SharedStateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStateStore.swift; sourceTree = "<group>"; };
+		90E87BBF2A03432600E9DA9E /* SharedStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStateView.swift; sourceTree = "<group>"; };
+		90E87BC12A03450A00E9DA9E /* SharedStateCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStateCounterView.swift; sourceTree = "<group>"; };
+		90E87BC32A03452500E9DA9E /* SharedStateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStateProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +171,7 @@
 				90E87BA22A02051A00E9DA9E /* TwoCounter */,
 				90E87BA92A022E8C00E9DA9E /* Binding */,
 				90E87BB32A024E4400E9DA9E /* OptionalBasics */,
+				90E87BBA2A03367800E9DA9E /* SharedState */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -295,6 +304,33 @@
 				90E87BB82A024E6900E9DA9E /* OptionalBasicsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		90E87BBA2A03367800E9DA9E /* SharedState */ = {
+			isa = PBXGroup;
+			children = (
+				90E87BBC2A03368400E9DA9E /* Stores */,
+				90E87BBB2A03367E00E9DA9E /* Views */,
+			);
+			path = SharedState;
+			sourceTree = "<group>";
+		};
+		90E87BBB2A03367E00E9DA9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90E87BBF2A03432600E9DA9E /* SharedStateView.swift */,
+				90E87BC12A03450A00E9DA9E /* SharedStateCounterView.swift */,
+				90E87BC32A03452500E9DA9E /* SharedStateProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90E87BBC2A03368400E9DA9E /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				90E87BBD2A03369700E9DA9E /* SharedStateStore.swift */,
+			);
+			path = Stores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,8 +476,12 @@
 				90E87BA82A0212A200E9DA9E /* TwoCounterView.swift in Sources */,
 				90E87BA62A0211FD00E9DA9E /* TwoCounterStore.swift in Sources */,
 				907AA2C12A00FDC200D6CF8A /* SwiftUI_TCAApp.swift in Sources */,
+				90E87BC42A03452500E9DA9E /* SharedStateProfileView.swift in Sources */,
+				90E87BC02A03432600E9DA9E /* SharedStateView.swift in Sources */,
 				90E87BB22A022F7600E9DA9E /* BindingFormView.swift in Sources */,
 				90E87BA12A01FDA100E9DA9E /* CounterView.swift in Sources */,
+				90E87BC22A03450A00E9DA9E /* SharedStateCounterView.swift in Sources */,
+				90E87BBE2A03369700E9DA9E /* SharedStateStore.swift in Sources */,
 				90E87BB92A024E6900E9DA9E /* OptionalBasicsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

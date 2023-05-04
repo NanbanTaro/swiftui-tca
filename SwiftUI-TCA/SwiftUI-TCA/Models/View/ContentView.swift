@@ -18,25 +18,28 @@ struct ContentView: View {
                                                        reducer: BindingForm())
     let optionalBasicsStore: StoreOf<OptionalBasics> = Store(initialState: OptionalBasics.State(),
                                                              reducer: OptionalBasics())
+    let sharedStateStore = Store(initialState: SharedState.State(),
+                                 reducer: SharedState())
 
     var body: some View {
-        Form {
-            Section {
-                CounterView(store: self.counterStore)
-                    .frame(maxWidth: .infinity)
-            }
-            Section {
-                TwoCountersView(store: self.twoCounterStore)
-                    .frame(maxWidth: .infinity)
-            }
-            Section {
-                BindingFormView(store: self.bindingFormStore)
-            }
-            Section {
-                OptionalBasicsView(store: self.optionalBasicsStore)
-            }
-        }
-        .buttonStyle(.borderless)
+//        Form {
+//            Section {
+//                CounterView(store: self.counterStore)
+//                    .frame(maxWidth: .infinity)
+//            }
+//            Section {
+//                TwoCountersView(store: self.twoCounterStore)
+//                    .frame(maxWidth: .infinity)
+//            }
+//            Section {
+//                BindingFormView(store: self.bindingFormStore)
+//            }
+//            Section {
+//                OptionalBasicsView(store: self.optionalBasicsStore)
+//            }
+//        }
+//        .buttonStyle(.borderless)
+        SharedStateView(store: self.sharedStateStore)
     }
 }
 
